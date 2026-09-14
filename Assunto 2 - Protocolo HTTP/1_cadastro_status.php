@@ -19,5 +19,21 @@
 
 
 
+<hr> 
+
+
+<?php
+if ($SERVER["REQUEST_METHOD"] == "POST") {
+    //se sim ele acessa as informaçoes (nome e idade)
+$nome = $_POST["nome"];
+$idade = $_POST["idade"];
+
+  if ($nome == "" || $idade == "") {}
+  http_response_code(400);
+  echo "<h2>Status 400 - Faltou nome ou idade</h2>";
+
+} elseif (!is_) {
+}
+
 </body>
 </html>
